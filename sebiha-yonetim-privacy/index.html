@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEBİHA YÖNETİM - Gizlilik Politikası</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            background: #f6f6f6;
+            color: #222;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 { margin-top: 0; }
+        h2 { margin-top: 32px; }
+        .date { color: #666; margin-bottom: 30px; }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 24px;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>SEBİHA YÖNETİM Gizlilik Politikası</h1>
+    <p class="date">Son güncelleme: 12 Eylül 2026</p>
+
+    <p>
+        Bu Gizlilik Politikası, <strong>SEBİHA YÖNETİM</strong> mobil uygulamasının
+        kişisel verileri ve işletme verilerini nasıl işlediğini açıklamak için hazırlanmıştır.
+        Uygulamanın paket adı <strong>com.sebihaozturk.admin</strong>, geliştiricisi
+        <strong>Metin Öztürk Yazılım</strong>dır.
+    </p>
+
+    <h2>1. Uygulamanın Amacı</h2>
+    <p>
+        SEBİHA YÖNETİM, SEBİHA işletme yöneticisi tarafından kullanılan bir yönetim
+        uygulamasıdır. Uygulama üzerinden mevcut SEBİHA backend altyapısındaki sipariş,
+        müşteri, ürün, kategori ve stok bilgileri görüntülenebilir; ürün, kategori, stok ve
+        sipariş yönetimi yapılabilir.
+    </p>
+
+    <h2>2. İşlenen Veriler</h2>
+    <p>Uygulama, kullanım amacıyla sınırlı olarak aşağıdaki verileri işleyebilir:</p>
+    <ul>
+        <li>Yönetici kullanıcı adı ve oturum bilgileri</li>
+        <li>Yönetici hesabı güvenliği ve yetkilendirme bilgileri</li>
+        <li>Sipariş bilgileri</li>
+        <li>Müşteri adı, teslimat adresi, telefon numarası ve e-posta adresi gibi siparişe bağlı müşteri bilgileri</li>
+        <li>Ürün, kategori, stok ve sipariş yönetimi için gerekli işletme verileri</li>
+        <li>Push bildirimleri için Firebase Cloud Messaging cihaz tokenı</li>
+    </ul>
+
+    <h2>3. Verilerin Kullanım Amaçları</h2>
+    <p>Veriler aşağıdaki amaçlarla kullanılır:</p>
+    <ul>
+        <li>Yetkili yöneticinin güvenli şekilde oturum açmasını sağlamak</li>
+        <li>Siparişleri görüntülemek, güncellemek ve yönetmek</li>
+        <li>Müşteri bilgilerini yalnızca sipariş yönetimi amacıyla yetkili admin kullanıcısına göstermek</li>
+        <li>Ürün, kategori ve stok yönetimi işlemlerini gerçekleştirmek</li>
+        <li>Yöneticiye sipariş ve yönetim süreçleriyle ilgili push bildirimi göndermek</li>
+        <li>Uygulama ve backend güvenliğini sağlamak</li>
+    </ul>
+
+    <h2>4. Push Bildirimleri ve Firebase Cloud Messaging</h2>
+    <p>
+        Uygulamada Google Firebase Cloud Messaging (FCM) yalnızca push bildirimleri için
+        kullanılmaktadır. Uygulama cihazına ait FCM cihaz tokenı, bildirim gönderebilmek
+        amacıyla SEBİHA backend altyapısında saklanabilir.
+    </p>
+    <p>
+        Uygulamada Firebase Analytics kullanılmamaktadır. Uygulamada reklam SDK'sı yoktur
+        ve veriler reklam amacıyla satılmaz.
+    </p>
+
+    <h2>5. İzinler ve Toplanmayan Veriler</h2>
+    <p>
+        Uygulama konum izni kullanmaz. Kişiler, SMS, mikrofon veya kamera gibi gereksiz
+        kişisel izinler kullanılmaz. Bu izinlerle ilişkili veriler toplanmaz.
+    </p>
+
+    <h2>6. Veri Aktarımı ve Saklama</h2>
+    <p>
+        Hesap ve güvenlik verileri güvenli bağlantı olan HTTPS üzerinden aktarılır. Sipariş,
+        müşteri, ürün, kategori, stok ve yönetim verileri Raspberry Pi / SEBİHA sunucu
+        altyapısı dahilindeki SEBİHA backend sistemlerinde işlenir.
+    </p>
+    <p>
+        Veriler, uygulamanın yönetim işlevlerini sunmak, güvenliği sağlamak ve yasal
+        yükümlülükleri yerine getirmek için gerekli olduğu süre boyunca saklanır.
+    </p>
+
+    <h2>7. Üçüncü Taraf Hizmetler</h2>
+    <p>
+        Uygulamada üçüncü taraf hizmet olarak Google Firebase Cloud Messaging kullanılır.
+        Bu hizmet, cihazlara push bildirimi iletmek için gerekli teknik verileri işleyebilir.
+    </p>
+
+    <h2>8. Verilerin Paylaşılması</h2>
+    <p>
+        Kişisel veriler ve müşteri verileri reklam amacıyla satılmaz. Müşteri adresi,
+        telefon numarası ve e-posta adresi gibi bilgiler yalnızca sipariş yönetimi amacıyla
+        yetkili admin tarafından görüntülenebilir. Veriler, yasal zorunluluklar veya hizmetin
+        güvenli şekilde yürütülmesi için gerekli durumlar dışında üçüncü kişilerle paylaşılmaz.
+    </p>
+
+    <h2>9. Güvenlik</h2>
+    <p>
+        Yetkisiz erişimi, veri kaybını veya kötüye kullanımı önlemek için teknik ve idari
+        güvenlik önlemleri uygulanır. Yönetici oturum bilgileri ve güvenlik verileri HTTPS
+        üzerinden aktarılır; backend erişimi yetkili kullanıcılarla sınırlandırılır.
+    </p>
+
+    <h2>10. Haklar ve Talepler</h2>
+    <p>
+        Kişisel verilerle ilgili erişim, düzeltme, silme veya bilgi alma talepleri için
+        Google Play üzerindeki SEBİHA YÖNETİM uygulamasının yayınlanmış geliştirici iletişim
+        bilgileri üzerinden geliştiriciyle iletişime geçebilirsiniz.
+    </p>
+
+    <h2>11. Politika Değişiklikleri</h2>
+    <p>
+        Uygulamanın özellikleri, kullanılan hizmetler veya yasal gereklilikler değiştiğinde
+        bu Gizlilik Politikası güncellenebilir. Güncel politika bu sayfada yayımlanır.
+    </p>
+
+    <h2>12. İletişim</h2>
+    <p>
+        Geliştirici: Metin Öztürk Yazılım. Bu projede yayınlanabilir bir geliştirici e-posta
+        adresi bulunmadığından bu sayfada e-posta adresi belirtilmemiştir. İletişim için
+        Google Play'de yayınlanan geliştirici iletişim bilgilerini kullanabilirsiniz.
+    </p>
+
+    <footer>© 2026 Metin Öztürk Yazılım - SEBİHA YÖNETİM</footer>
+</div>
+</body>
+</html>
